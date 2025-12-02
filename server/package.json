@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "build": "prisma generate && prisma migrate deploy",
+    "build": "prisma generate && prisma migrate resolve --rolled-back 20251129183509_add_password_reset_fields && prisma migrate deploy",
     "postinstall": "prisma generate"
   },
   "keywords": [],

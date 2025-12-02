@@ -18,13 +18,18 @@ const allowedOrigins = [
   "http://localhost:5176",
   "http://localhost:5173",
   "https://cgpa-analyzer.vercel.app",
-];
+  "https://cgpa-analyzer-0c2q.onrender.com",
+  process.env.CLIENT_URL,
+].filter(Boolean); // Remove undefined values
 
 const corsOptions = {
   origin: (origin, callback) => {
+    // Allow requests with no origin (like mobile apps or curl)
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
+      console.error(`CORS blocked origin: ${origin}`);
+      console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
       callback(new Error("Not allowed by CORS"));
     }
   },

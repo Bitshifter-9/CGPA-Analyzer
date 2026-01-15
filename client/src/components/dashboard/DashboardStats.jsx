@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 import { FiBook, FiAward, FiTrendingUp } from 'react-icons/fi';
 import Card from '../ui/Card';
 import Badge from '../ui/Badge';
@@ -6,11 +6,7 @@ import { SkeletonCard } from '../ui/Skeleton';
 
 const DashboardStats = ({ loading, cgpa, stats }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 0.1 }}
-    >
+    <div>
       {loading ? (
         <SkeletonCard />
       ) : (
@@ -49,7 +45,7 @@ const DashboardStats = ({ loading, cgpa, stats }) => {
           </div>
         </Card>
       )}
-    </motion.div>
+    </div>
   );
 };
 

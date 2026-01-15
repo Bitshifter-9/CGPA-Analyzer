@@ -138,20 +138,20 @@ const Signup = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-navy-900 dark:via-navy-900 dark:to-navy-800 w-full transition-colors duration-200">
-      <nav className="bg-white/80 dark:bg-navy-800/80 backdrop-blur-md border-b border-gray-200 dark:border-navy-700 sticky top-0 z-50 w-full transition-colors duration-200">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 w-full transition-colors duration-200">
+      <nav className="bg-white/80 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 w-full transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center group">
-              <span className="text-lg sm:text-xl font-semibold tracking-tight text-gray-900 dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+              <span className="text-lg sm:text-xl font-semibold tracking-tight text-gray-900 group-hover:text-gray-600 transition-colors">
                 CGPA Calculator
               </span>
             </Link>
-            <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <div className="text-xs sm:text-sm text-gray-600">
               Already have an account?{' '}
               <Link
                 to="/login"
-                className="font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                className="font-medium text-gray-900 hover:text-gray-600 transition-colors"
               >
                 Sign in
               </Link>

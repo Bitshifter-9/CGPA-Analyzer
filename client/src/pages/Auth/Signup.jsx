@@ -166,73 +166,73 @@ const Signup = () => {
 
             <div className="hidden lg:block space-y-8 animate-fade-in w-full">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
                   Start Your Journey
                 </h1>
-                <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed">
                   Begin tracking your academic progress and stay organized throughout your college experience.
                 </p>
               </div>
 
               <div className="space-y-6 pt-8">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-white rounded-xl flex items-center justify-center border-2 border-gray-200 dark:border-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black dark:text-black">
+                  <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center border-2 border-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Free Forever</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">No hidden costs, no premium tiers - completely free to use</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Free Forever</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">No hidden costs, no premium tiers - completely free to use</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-white rounded-xl flex items-center justify-center border-2 border-gray-200 dark:border-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black dark:text-black">
+                  <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center border-2 border-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Secure & Private</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Your academic data is encrypted and never shared</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Secure & Private</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">Your academic data is encrypted and never shared</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-white rounded-xl flex items-center justify-center border-2 border-gray-200 dark:border-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black dark:text-black">
+                  <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center border-2 border-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Quick Setup</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Get started in under a minute - it's that simple</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Quick Setup</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">Get started in under a minute - it's that simple</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white dark:bg-white rounded-xl flex items-center justify-center border-2 border-gray-200 dark:border-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black dark:text-black">
+                  <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center border-2 border-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-black">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Works Everywhere</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Access from any device - mobile, tablet, or desktop</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Works Everywhere</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">Access from any device - mobile, tablet, or desktop</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="w-full max-w-xl mx-auto lg:max-w-none">
-              <div className="bg-white dark:bg-navy-800 rounded-3xl shadow-2xl border border-gray-200 dark:border-navy-700 p-6 sm:p-8 lg:p-12 w-full transition-colors duration-200">
+              <div className="bg-white rounded-3xl shadow-2xl border border-gray-200 p-6 sm:p-8 lg:p-12 w-full transition-colors duration-200">
                 <div className="space-y-6 sm:space-y-8 w-full">
                   <div className="text-center lg:text-left space-y-2">
-                    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
                       Create account
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+                    <p className="text-gray-600 text-sm sm:text-base">
                       Get started with your free account today
                     </p>
                   </div>
@@ -240,7 +240,7 @@ const Signup = () => {
 
                   <form onSubmit={handleSubmit} className="space-y-5">
                     {error && (
-                      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-xl text-sm">
+                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
                         {error}
                       </div>
                     )}
@@ -248,7 +248,7 @@ const Signup = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="username"
-                        className="block text-sm font-medium text-gray-900 dark:text-white"
+                        className="block text-sm font-medium text-gray-900"
                       >
                         Username
                       </label>
@@ -260,7 +260,7 @@ const Signup = () => {
                         onChange={handleChange}
                         placeholder="john_doe"
                         required
-                        className="w-full px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 placeholder:text-gray-400 dark:placeholder:text-gray-500 text-gray-900 dark:text-white"
+                        className="w-full px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 placeholder:text-gray-400 text-gray-900"
                       />
                       <p className="text-xs text-gray-500 mt-1">3-30 characters, letters, numbers, and ._- only</p>
                     </div>
@@ -268,7 +268,7 @@ const Signup = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-900 dark:text-white"
+                        className="block text-sm font-medium text-gray-900"
                       >
                         Email address
                       </label>
@@ -280,14 +280,14 @@ const Signup = () => {
                         onChange={handleChange}
                         placeholder="you@example.com"
                         required
-                        className="w-full px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 placeholder:text-gray-400 dark:placeholder:text-gray-500 text-gray-900 dark:text-white"
+                        className="w-full px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 placeholder:text-gray-400 text-gray-900"
                       />
                     </div>
 
                     <div className="space-y-2">
                       <label
                         htmlFor="collegeId"
-                        className="block text-sm font-medium text-gray-900 dark:text-white"
+                        className="block text-sm font-medium text-gray-900"
                       >
                         College
                       </label>
@@ -299,7 +299,7 @@ const Signup = () => {
                             value={formData.collegeId}
                             onChange={handleChange}
                             required
-                            className="w-full px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 text-gray-900 dark:text-white"
+                            className="w-full px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 text-gray-900"
                           >
                             <option value="">Select your college</option>
                             {colleges.map((college) => (
@@ -311,7 +311,7 @@ const Signup = () => {
                           <button
                             type="button"
                             onClick={() => setShowAddCollege(true)}
-                            className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white font-medium mt-1"
+                            className="text-sm text-gray-600 hover:text-gray-900 font-medium mt-1"
                           >
                             Can't find your college? Add it here
                           </button>
@@ -324,13 +324,13 @@ const Signup = () => {
                               value={newCollegeName}
                               onChange={(e) => setNewCollegeName(e.target.value)}
                               placeholder="Enter college name"
-                              className="flex-1 px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 text-gray-900 dark:text-white"
+                              className="flex-1 px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 text-gray-900"
                             />
                             <button
                               type="button"
                               onClick={handleAddCollege}
                               disabled={loading}
-                              className="px-4 py-3.5 bg-white dark:bg-white text-black dark:text-black rounded-xl hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors disabled:opacity-50"
+                              className="px-4 py-3.5 bg-white text-black rounded-xl hover:bg-gray-100 transition-colors disabled:opacity-50"
                             >
                               {loading ? 'Adding...' : 'Add'}
                             </button>
@@ -341,7 +341,7 @@ const Signup = () => {
                               setShowAddCollege(false);
                               setNewCollegeName('');
                             }}
-                            className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white font-medium"
+                            className="text-sm text-gray-600 hover:text-gray-900 font-medium"
                           >
                             ← Back to college selection
                           </button>
@@ -352,7 +352,7 @@ const Signup = () => {
                     <div className="space-y-2">
                       <label
                         htmlFor="password"
-                        className="block text-sm font-medium text-gray-900 dark:text-white"
+                        className="block text-sm font-medium text-gray-900"
                       >
                         Password
                       </label>
@@ -366,12 +366,12 @@ const Signup = () => {
                           placeholder="Create a strong password"
                           required
                           minLength={6}
-                          className="w-full px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 placeholder:text-gray-400 dark:placeholder:text-gray-500 pr-12 text-gray-900 dark:text-white"
+                          className="w-full px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 placeholder:text-gray-400 pr-12 text-gray-900"
                         />
                         <button
                           type="button"
                           onClick={() => setShowPassword(!showPassword)}
-                          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
                         >
                           {showPassword ? (
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -385,13 +385,13 @@ const Signup = () => {
                           )}
                         </button>
                       </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Must be at least 8 characters with uppercase, lowercase, number, and special character</p>
+                      <p className="text-xs text-gray-500 mt-1">Must be at least 8 characters with uppercase, lowercase, number, and special character</p>
                     </div>
 
                     <div className="space-y-2">
                       <label
                         htmlFor="confirmPassword"
-                        className="block text-sm font-medium text-gray-900 dark:text-white"
+                        className="block text-sm font-medium text-gray-900"
                       >
                         Confirm password
                       </label>
@@ -405,12 +405,12 @@ const Signup = () => {
                           placeholder="Re-enter your password"
                           required
                           minLength={6}
-                          className="w-full px-4 py-3.5 bg-gray-50 dark:bg-navy-900 border border-gray-300 dark:border-navy-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent focus:bg-white dark:focus:bg-navy-900 transition-all duration-200 placeholder:text-gray-400 dark:placeholder:text-gray-500 pr-12 text-gray-900 dark:text-white"
+                          className="w-full px-4 py-3.5 bg-gray-50 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent focus:bg-white transition-all duration-200 placeholder:text-gray-400 pr-12 text-gray-900"
                         />
                         <button
                           type="button"
                           onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition-colors"
                         >
                           {showConfirmPassword ? (
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -433,15 +433,15 @@ const Signup = () => {
                         type="checkbox"
                         checked={agreedToTerms}
                         onChange={(e) => setAgreedToTerms(e.target.checked)}
-                        className="mt-1 h-4 w-4 rounded border-gray-300 dark:border-navy-700 text-gray-900 dark:text-white focus:ring-gray-900 dark:focus:ring-white cursor-pointer bg-white dark:bg-navy-900"
+                        className="mt-1 h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900 cursor-pointer bg-white"
                       />
-                      <label htmlFor="terms" className="ml-2 block text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
+                      <label htmlFor="terms" className="ml-2 block text-sm text-gray-700 cursor-pointer">
                         I agree to the{' '}
-                        <a href="#" className="font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        <a href="#" className="font-medium text-gray-900 hover:text-gray-600 transition-colors">
                           Terms of Service
                         </a>
                         {' '}and{' '}
-                        <a href="#" className="font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        <a href="#" className="font-medium text-gray-900 hover:text-gray-600 transition-colors">
                           Privacy Policy
                         </a>
                       </label>
@@ -450,7 +450,7 @@ const Signup = () => {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full bg-white dark:bg-white text-black dark:text-black py-3.5 rounded-xl font-medium hover:bg-gray-100 dark:hover:bg-gray-200 hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      className="w-full bg-white text-black py-3.5 rounded-xl font-medium hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                     >
                       {loading ? 'Creating account...' : 'Create account'}
                     </button>
@@ -458,11 +458,11 @@ const Signup = () => {
                 </div>
               </div>
 
-              <p className="text-center text-sm text-gray-600 dark:text-gray-400 mt-6 lg:hidden">
+              <p className="text-center text-sm text-gray-600 mt-6 lg:hidden">
                 Already have an account?{' '}
                 <Link
                   to="/login"
-                  className="font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                  className="font-medium text-gray-900 hover:text-gray-600 transition-colors"
                 >
                   Sign in
                 </Link>

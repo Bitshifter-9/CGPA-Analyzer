@@ -60,9 +60,23 @@ authRouter.get(
       const payload = req.user || {};
       const { generateToken } = await import("../utils/generateToken.js");
       generateToken(res, payload);
-      const redirectTo = `${
-        process.env.CLIENT_URL || "https://cgpa-analyzer.vercel.app"
-      }/dashboard`;
+
+      // Determine base URL: environment variable > origin > fallback
+      let baseUrl = process.env.CLIENT_URL;
+      if (!baseUrl && req.headers.origin) {
+        baseUrl = req.headers.origin;
+      } else if (!baseUrl && req.headers.referer) {
+        try {
+          const url = new URL(req.headers.referer);
+          baseUrl = url.origin;
+        } catch (e) {
+          baseUrl = "https://cgpa-analyzer.vercel.app";
+        }
+      } else if (!baseUrl) {
+        baseUrl = "https://cgpa-analyzer.vercel.app";
+      }
+
+      const redirectTo = `${baseUrl}/dashboard`;
       return res.redirect(redirectTo);
     } catch (err) {
       console.error("OAuth callback error", err);

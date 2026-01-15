@@ -27,10 +27,8 @@ const Button = forwardRef(({
   };
 
   return (
-    <motion.button
+    <button
       ref={ref}
-      whileHover={{ scale: disabled ? 1 : 1.01 }}
-      whileTap={{ scale: disabled ? 1 : 0.99 }}
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
       disabled={disabled || loading}
       {...props}
@@ -48,7 +46,7 @@ const Button = forwardRef(({
       {icon && iconPosition === 'right' && (
         <span className="ml-2">{icon}</span>
       )}
-    </motion.button>
+    </button>
   );
 });
 

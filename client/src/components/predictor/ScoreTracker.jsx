@@ -18,18 +18,21 @@ const ScoreTracker = () => {
   useEffect(() => {
     fetchSemesters();
     fetchTemplates();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     if (selectedSemester) {
       fetchSubjects();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedSemester]);
 
   useEffect(() => {
     if (selectedSubject) {
       fetchSubjectAssessment();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedSubject]);
 
   const fetchSemesters = async () => {
@@ -80,7 +83,7 @@ const ScoreTracker = () => {
         });
         setScores(initialScores);
       }
-    } catch (err) {
+    } catch (error) {
       // No assessment found yet
       setSubjectAssessment(null);
       setScores({});

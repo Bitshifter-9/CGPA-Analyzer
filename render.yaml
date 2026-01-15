@@ -23,7 +23,6 @@ services:
   - type: web
     name: cgpa-analyzer-frontend
     runtime: static
-    region: oregon
     plan: free
     branch: main
     rootDir: client

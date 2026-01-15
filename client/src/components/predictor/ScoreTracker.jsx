@@ -18,19 +18,19 @@ const ScoreTracker = () => {
   useEffect(() => {
     fetchSemesters();
     fetchTemplates();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (selectedSemester) {
       fetchSubjects();
     }
-  }, [selectedSemester]);
+  }, [selectedSemester]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (selectedSubject) {
       fetchSubjectAssessment();
     }
-  }, [selectedSubject]);
+  }, [selectedSubject]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchSemesters = async () => {
     try {

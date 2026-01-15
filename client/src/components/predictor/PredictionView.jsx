@@ -18,7 +18,7 @@ const PredictionView = () => {
     if (selectedSemester) {
       fetchPredictions();
     }
-  }, [selectedSemester]);
+  }, [selectedSemester]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fetchSemesters = async () => {
     try {

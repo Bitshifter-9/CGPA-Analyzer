@@ -33,16 +33,16 @@ const Login = () => {
     e.preventDefault();
     setError('');
     setLoading(true);
-    
+
     try {
       const result = await login(formData.email, formData.password, rememberMe);
-      
+
       if (!result.success) {
         setError(result.error || 'Login failed. Please check your credentials.');
         setLoading(false);
         return;
       }
-      
+
       console.log('Login successful! Redirecting to dashboard...');
       navigate('/dashboard');
     } catch (err) {
@@ -52,17 +52,7 @@ const Login = () => {
     }
   };
 
-  const handleSocialLogin = (provider) => {
-    if (provider === 'Google') {
-      window.location.href = '/api/auth/google';
-    } else if (provider === 'GitHub') {
-      setError('GitHub authentication is not yet configured');
-    }
-  };
 
-  const handleForgotPassword = () => {
-    alert('Forgot password feature will be implemented');
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 w-full">
@@ -109,6 +99,31 @@ const Login = () => {
                       </div>
                     )}
 
+                    {/* Test User Credentials Box */}
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+                      <div className="flex items-start justify-between">
+                        <div>
+                          <h3 className="text-sm font-semibold text-blue-900">Test Credentials</h3>
+                          <div className="mt-1 text-sm text-blue-800">
+                            <p><span className="font-medium">Email:</span> demo@example.com</p>
+                            <p><span className="font-medium">Password:</span> DemoUser@123</p>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setFormData({
+                              email: 'demo@example.com',
+                              password: 'DemoUser@123'
+                            });
+                          }}
+                          className="px-3 py-1.5 bg-blue-600 text-white text-xs font-medium rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+                        >
+                          Auto-fill
+                        </button>
+                      </div>
+                    </div>
+
                     <div className="space-y-2">
                       <label htmlFor="email" className="block text-sm font-medium text-gray-900">Email address</label>
                       <input
@@ -126,7 +141,7 @@ const Login = () => {
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
                         <label htmlFor="password" className="block text-sm font-medium text-gray-900">Password</label>
-                        <Link 
+                        <Link
                           to="/forgot-password"
                           className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                         >
@@ -168,40 +183,14 @@ const Login = () => {
                       </label>
                     </div>
 
-                    <button 
-                      type="submit" 
+                    <button
+                      type="submit"
                       disabled={loading}
                       className="w-full bg-gray-900 text-white py-3.5 rounded-xl font-medium hover:bg-gray-800 hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                     >
                       {loading ? 'Signing in...' : 'Sign in'}
                     </button>
                   </form>
-
-                  <div className="relative">
-                    <div className="absolute inset-0 flex items-center">
-                      <div className="w-full border-t border-gray-200"></div>
-                    </div>
-                    <div className="relative flex justify-center text-sm">
-                      <span className="px-4 bg-white text-gray-500">Or continue with</span>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4">
-                    <button
-                      type="button"
-                      onClick={() => handleSocialLogin('Google')}
-                      className="flex items-center justify-center gap-3 px-4 py-3 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition-all duration-200"
-                    >
-                      <span className="text-sm font-medium text-gray-700">Google</span>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => handleSocialLogin('GitHub')}
-                      className="flex items-center justify-center gap-3 px-4 py-3 bg-white border border-gray-300 rounded-xl hover:bg-gray-50 hover:border-gray-400 transition-all duration-200"
-                    >
-                      <span className="text-sm font-medium text-gray-700">GitHub</span>
-                    </button>
-                  </div>
                 </div>
               </div>
 

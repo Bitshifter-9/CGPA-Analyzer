@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useKeyboardShortcut } from '../../hooks/useKeyboardShortcut';
 import Navbar from '../layout/Navbar';
 import CommandPalette from '../command/CommandPalette';

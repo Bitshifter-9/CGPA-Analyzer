@@ -25,13 +25,18 @@ const allowedOrigins = [
 const corsOptions = {
   origin: (origin, callback) => {
     // Allow requests with no origin (like mobile apps or curl)
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      console.error(`CORS blocked origin: ${origin}`);
-      console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
-      callback(new Error("Not allowed by CORS"));
-    }
+    if (!origin) return callback(null, true);
+
+    // Check if origin matches allowed credentials
+    if (allowedOrigins.includes(origin)) return callback(null, true);
+
+    // Allow dynamic Render subdomains for this app
+    const isRenderDomain = /^https:\/\/cgpa-analyzer-.*\.onrender\.com$/.test(origin);
+    if (isRenderDomain) return callback(null, true);
+
+    console.error(`CORS blocked origin: ${origin}`);
+    console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
+    callback(new Error("Not allowed by CORS"));
   },
   credentials: true,
 };

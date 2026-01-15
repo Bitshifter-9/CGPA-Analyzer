@@ -1,12 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FiMoon, FiSun } from 'react-icons/fi';
 import Button from '../ui/Button';
-import { useTheme } from '../../contexts/ThemeContext';
 
 const PublicNavbar = () => {
   const navigate = useNavigate();
-  const { theme, toggleTheme } = useTheme();
 
   return (
     <nav className="sticky top-0 z-40 bg-white/80 dark:bg-navy-800/80 backdrop-blur-md border-b border-gray-100 dark:border-navy-700 transition-colors duration-200">
@@ -22,20 +18,8 @@ const PublicNavbar = () => {
 
           {/* Auth Buttons */}
           <div className="flex items-center gap-3">
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-navy-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-navy-600 transition-colors"
-              aria-label="Toggle theme"
-              title="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <FiSun className="w-4 h-4" />
-              ) : (
-                <FiMoon className="w-4 h-4" />
-              )}
-            </button>
-            
+
+
             <Button
               variant="ghost"
               size="sm"
